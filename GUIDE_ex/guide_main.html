@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h1>Markup Guide</h1>
+<ul class="author">
+    <li><b>Project :</b> Project Name</li>
+    <li><b>Author :</b> feversore@gmail.com</li>
+</ul>
+<hr>
+
+<nav>
+<ul>
+    <li><a href="guide_main.html" class="on">Rule</a></li>
+    <li><a href="guide_layout.html">Layout</a></li>
+    <li><a href="guide_page.html">Page</a></li>
+    <li><a href="guide_etc.html">ETC</a></li>
+</ul>
+</nav>
+<hr>
+<div class="wrap">
+<h2>Rule</h2>
+
+<section class="rule">
+<h3>네이밍</h3>
+<ul>
+    <li>영문 소문자로 시작</li>
+    <li>단어 조합시 연결은 '-' 사용</li>
+    <li>클래스 확장을 위해 넘버링 사용 (예:class_name, .class_name2, .class_name3 ...)</li>
+    <li>네이밍 순서 형태/메뉴명_의미_상태(n) 순서로 작성 </li>
+</ul>
+
+<h3>주석</h3>    
+<ul>
+    <li>
+<p>&lt;!-- comment start --&gt;<br>
+...<br>
+&lt;!-- //comment end --&gt;</p>
+    </li>
+</ul>
+
+
+<h3>들여쓰기</h3>
+<ul>
+    <li>Space bar 4칸</li>
+</ul>
+
+<h3>DTD</h3>
+<ul>
+    <li>HTML5
+<p>&lt;!DOCTYPE html&gt;</p></li>
+    <li>HTML 4.01 Transitional
+<p>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</p></li>
+    <li>XHTML 1.0 Transitional
+<p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p></li>
+</ul>
+
+<h3>인코딩</h3>
+<ul>
+    <li>개발쪽과 협의를 통해서 결정</li>
+    <li><p>&lt;meta charset="utf-8"&gt;</p></li>
+    <li><p>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</p></li>
+</ul>
+
+<h3>폴더구조</h3>
+<ul>
+    <li>inc
+    <ul>
+        <li>images
+        <ul>
+            <li>common
+            <ul>
+                <li>icn</li>
+                <li>btn</li>
+                <li>layout</li>
+                <li>bg</li>
+                <li>etc</li>
+            </ul>
+            </li>
+            <li>main</li>
+            <li>depth1</li>
+            <li>depth2</li>
+            <li>template ..</li>
+        </ul>
+        </li>
+        <li>js</li>
+        <li>css
+        <ul>
+            <li>design.css - css 파일 import</li>
+            <li>common.css - reset.css, default.css - common css 정의</li>
+            <li>layout.css - 레이아웃 css 정의</li>
+            <li>depth1~#.css - 메뉴에 따른 css 정의</li>
+            <li>design.css - 유지운영을 위한 css 정의</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li>index.html</li>
+    <li>depth1
+    <ul>
+        <li>content.html</li>
+        <li>content.html</li>
+        <li>content.html</li>
+    </ul>
+    </li>
+    <li>depth2
+    <ul>
+        <li>content.html</li>
+        <li>content.html</li>
+        <li>content.html</li>
+    </ul>
+    </li>
+    <li>Template
+    <ul>
+        <li>page.html</li>
+        <li>page.html</li>
+        <li>page.html</li>
+    </ul>
+    </li>
+</ul>
+</section>
+</div>
+</body>
+</html>
